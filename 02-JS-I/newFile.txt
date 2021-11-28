@@ -1,0 +1,45 @@
+Variable: Las variables son formas de almacenar valores para luego usar, podemos inicializar una variable usando la palabra 
+"var" o "let" o "const", seguida del nombre y asignar un valor con el igual(=), por ejemplo "var valor=10;"
+
+String: Son un tipo de variable, en este caso es un bloque de texto definido entre comillas simples o dobles.Por ejemplo var apellido='Alvarez'
+
+Funciones: son objetos invocables, es decir, que tiene todas las propiedades de un objeto. Puede ser definida de las siguientes maneras:
+	- function miFuncion() {}
+    - var otraFuncion = function () {};
+    - var yOtra = () => {};
+Vamos a hablar sobre la forma de la funcion, primero vamos a iniciar escribiendo la palabra "function" antes de el nombre y entre parentesis () los objetos q requiere, en caso de no necesitar ninguno dejamos vacio, despues de eso abrimos corchete y ahi escribimos el cuerpo de la funcion y termina al cerrar cochetes. Ejemplo:
+ 
+ function myfuncion(nombre){
+ 	console.log('Hola '+nombre);
+ } 
+
+ En caso de que querramos que la funcion nos devuelva un valor escribiremos la funcion "return" el cual nos devuelve un valor. Ejemplo:
+
+ function myfuncion(num1,num2){
+ 	var sum=num1+num2;
+ 	return sum;
+ }
+
+
+Declaraciones "if": es una palabra clave para usar controladores de flujo o comparacion, es decir, colocaremos la palabra if seguida de parentesis y entre esos parentesis vamos a comprar dos valores y despues abrimos y cerramos corchetes, en caso de que el resultado sea verdad continuara con el programa y sino saldra de los corchetes. Ejemplo
+
+function myfuincion(edad){
+	if(edad>=18){
+	console.log("Puede manejar");
+	}
+}
+
+tambien podemos añadir la palabra "else", la cual funciona siempre que los controladores indiquen que la igualdad es falsa. Elemplo:
+
+function myfuncion(edad){
+	if(edad>=18){
+	console.log("Puede manejar");
+	}
+	else{
+	console.log("No puede manejar");
+	}
+}  
+
+Valores Booleanos: En JavaScript es una variable que puede tener solo dos valores, vardadero o falso. En este caso los valores se escriben de la siguiente manera "treu" o "false". Ejemplo:
+
+var igualdad= true;
