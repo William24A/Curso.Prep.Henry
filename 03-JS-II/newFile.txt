@@ -1,0 +1,13 @@
+for: es un bucle se inicializa de la siguente manera, primero vamos a colocar la palabra "for" seguida de unos parentesis en los cuales vamos a colocar tres partes separadas por un ";", en la primera vamos a inicializar una variable y la vamos a igualar a nuestro punto de inicio, despues vamos a colocar una expresión condicional, el ciclo va a continuar hasta que esta condicion sea falsa y por ultimo vamos a incrementar nuestra variable. Ejemplo:
+
+for(var i=0; i< 100;i++){
+	codigo
+}  
+
+El bucle va a realizar si trabajo siempre y cuando i<100, si es que i es mayor o igual a 100 va a salir del bucle.
+
+"&&" "||" "!": Son operadores logicos los cuales se ocupan de comparar valores booleanos de la siguente manera:
+
+-"&&": este evaluara ambas expresiones, si las dos son verdaderas devolvera true y si una es falsa o ambas lo son, devolvera false.
+-"||": Determinara si una de las expresiones es true o ambas lo son, en tal caso devolvera true. Si es que ambas expresiones son false devolvera false.
+-"!": este operador devolvera el valor opuesto al que se le pase. 
