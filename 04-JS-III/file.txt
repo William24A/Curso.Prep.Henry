@@ -1,0 +1,9 @@
+Arrays:	son objetos similares a una lista, en las cuales se puede almacenar diferentes tipos de datos. Para declarar un 		array primero vamos a colocar como cualquier variable la palabra 'var' o 'let' o 'const', seguida de el nombre del 			array y despues vamos a asignar valores con '=' seguida de corchetes [] en donde vamos a agregar valores separados por 		coma, tambien podemos dejar sin asignar valores. Ejemplo
+ 	
+ 	var array=[];
+ 	var array=[1,2,3,4]
+ 	let array=['tony', 'tomy'];
+
+ 	Para ingresar a este array vamos a colocar despues del nombre, los cochetes [] y a dentro vamos a colocar una posicion. Elemplo
+ 	 array[0];
+ 	Esto es tratado como el tipo de dato que tiene guarado en esa posicion, con lo cual vamos a poder sumar en caso de ser un numero o concatenar en caso de un string.
