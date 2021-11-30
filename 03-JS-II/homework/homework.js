@@ -141,20 +141,33 @@ function operadoresLogicos(num1, num2, num3) {
   //0 no es ni positivo ni negativo. Si alguno de los argumentos es 0, retornar "Error".
   //Si no se cumplen ninguna de las condiciones anteriores, retornar false. 
   if(num1>num2 && num1>num3){
+     if(num1===0 || num2===0 || num3===0){
+      return 'Error';
+    }
+      if(num1<0 || num2<0 || num3<0){
+          if(num1===0 || num2===0 || num3===0){
+          return 'Error';
+         }
+      return 'Hay negativos';
+      }
     if(num1>0){
       return 'Número 1 es mayor y positivo';
     }
   }
   if(num1<0 || num2<0 || num3<0){
+      if(num1===0 || num2===0 || num3===0){
+      return 'Error';
+    }
     return 'Hay negativos';
   }
   if(num3>num1 && num3>num2){
     num3+=1;
+    if(num1===0 || num2===0 || num3===0){
+      return 'Error';
+    }
     return num3;
   }
-  if(num1===0 || num2===0 || num3===0){
-    return 'Error';
-  }
+  
 return false;
 }
 
@@ -164,12 +177,13 @@ function esPrimo(numero) {
   // Pista: un número primo solo es divisible por sí mismo y por 1
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
-   for(var i=2;i<numero;i++){
+   var igualdad=true;
+   for(var i=2;i<numero && igualdad;i++){
       if(numero%i===0){
-        return false;
+        igualdad=false;
       }
-  }
-  return true;
+   }
+  return igualdad;
 }
 
 function esVerdadero(valor){
