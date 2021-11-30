@@ -29,7 +29,7 @@ function conection(status) {
   //Cuando el estado es igual a 2, el usuario está "Away"
   //De lo contrario, presumimos que el usuario está "Offline"
   //Devolver el estado de conexión de usuario en cada uno de los casos.
-  Switch(status){
+   switch(status){
       case 1:
         return 'Online';
       case 2:
@@ -46,7 +46,7 @@ function saludo(idioma) {
   // Si "idioma" es "ingles", devuelve "Hello!"
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
   // Tu código:
-  Switch(idioma){
+   switch(idioma){
       case 'aleman':
           return 'Guten Tag!';
       case 'mandarin':
@@ -66,7 +66,7 @@ function colors(color) {
   //En caso que el color recibido sea "orange", devuleve --> "This is orange"
   //Caso default: devuelve --> "Color not found"
   //Usar el statement Switch.
-  Switch(color){
+   switch(color){
       case 'blue':
           return 'This is blue';
       case 'red':
@@ -78,7 +78,6 @@ function colors(color) {
       default:
           return 'Color not found';
   }
-
 }
 
 function esDiezOCinco(numero) {
@@ -96,11 +95,10 @@ function estaEnRango(numero) {
   // Devuelve "true" si "numero" es menor que 50 y mayor que 20
   // De lo contrario, devuelve "false"
   // Tu código:
-  if(numero<=50 && numero=>20){
+  if(numero<50 && numero>20){
     return true;
-  }else{
-    return false;
   }
+return false;
 }
 
 function esEntero(numero) {
@@ -111,7 +109,7 @@ function esEntero(numero) {
   // De lo contrario, devuelve "false"
   // Pista: Puedes resolver esto usando `Math.floor`
   // Tu código:
-  if(Math.floor(numero)===numero){
+   if(Math.floor(numero)===numero){
       return true;
   }else{
     return false;
@@ -166,12 +164,12 @@ function esPrimo(numero) {
   // Pista: un número primo solo es divisible por sí mismo y por 1
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
-  for(var i=2;i<numero;i++){
-    if(numero%i===0){
-      return 'falso';
-    }
+   for(var i=2;i<numero;i++){
+      if(numero%i===0){
+        return false;
+      }
   }
-  return 'true';
+  return true;
 }
 
 function esVerdadero(valor){
@@ -202,7 +200,6 @@ function tieneTresDigitos(numero){
   if(numero>99 && numero<1000){
       return true;
   }
-
 return false;
 }
 
@@ -214,8 +211,7 @@ function doWhile(numero) {
   do{
     numero+=5;
     i++;
-  }While(i<=8);
-
+  }while(i<8);
 return numero;
 }
 
