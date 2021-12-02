@@ -1,0 +1,41 @@
+Objetos: Son contenedores de datos en donde vamos a poder almacenar muchos datos referidos al mismo objeto. Para armar un objeto vamos a colocar la palabra "var" o "let" o "const" dependiendo de lo que se requiera, seguido a eso vamos a colocar el nombre del objeto. Ademas vamos a colocar "=" con {} y por ultimo vamos a colocar ";", de la siguiente manera:
+
+const usuario={
+	
+};
+
+Propiedades: Entre los corchetes vamos a colocar las propiedades seguidas de su valos, por eso se llama clave:valor. Cada clave:valor va a estar separado por una ",". Por ejemplo:
+
+const usuario={
+	nombre: 'Juan',
+	apellido: 'Aguirre',
+	edad: 24	
+};
+
+	Podemos ingresar a cada propiedad de manera individual de la siguente manera, vamos a colocar el nombre del objeto y luego vamos a seguir con un punto o con ['Nombrepropiedad'], en el caso del punto vamos a continuar con el nombre de la propiedad.Ejemplo:
+
+	usuario.nombre;
+	usuario['apellido'];
+
+	De esta manera tambien podriamos asignarles valores.
+
+	usuario.nombre= 'Juan';
+
+Metodo: En los valores podemos incluir funciones, de esta manera el nombre de este valor sera conocido como metodo. A este metodo lo podemos llamar ingresando el nombre del objeto seguido de un punto o seguido de "['Nombrepropiedad']" y al final los parentecis. Ejmeplo
+
+const usuario={
+	Nombre: 'Usuario',
+	saluda: function(){
+	 console.log('Hola, soy Usuario');
+	}
+}; 
+
+usuario.saluda();
+usuario['saluda']();
+
+for.. in: Aveces queremos iterar sobre cada propiedad de nuestro objeto, en este caso es diferente a lo que hariamos en una matriz porque los nombre de las porpiedades no son numeros. En javaScript tenemos un segundo bucle for llamado 'for in loop', en el mismo vamos a iniciar como en el for comun, vamos a colocar la palabra 'for' seguida de los parentecis '()'. Dentro de los parentecis es donde esta lo diferente, declareremos una variable seguida de la palabra clave 'in' y el nombre del objeto. Podemos aceder a esta clave en nuetro bucle for para acceder al valor asociado a esta clave. Ejemplo:
+
+for(let clave in usuario){
+	console.log(clave);
+	console.log(usuario[clave]);
+}
