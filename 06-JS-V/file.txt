@@ -1,0 +1,32 @@
+Prototype: En JS vamos a tratar a la herencia como prototipos, es decir, que vamos a heredar funciones de nuestro objeto 'padre' y tambien podemos crear nuevas funciones para que nuestro objeto las herede. Para hacer esto vamos a colocar el nombre del objeto seguido de '.prototype.' el nombre de la funcion. Ejemplo
+
+function Persona(nombre,apellido,DNI){
+	this.nombre= nombre;
+	this.apellido= apellido;
+	this.DNI= DNI;
+}
+
+Persona.prototype.saludar= function(){
+	console.log('Hola yo soy '+ this.nombre);
+}
+
+	Para usar esta nueva funcion vamos a colocar el nombre seguido de '.' y el nombre de la funcion. Ejemplo
+
+var Emi= new Persona('Emi','Alba', 23454567);
+
+Emi.saludar();
+
+Constructors: Tambien conocidos como class o clases, son utiles para crear nuevos objetos, los cuales van a compartir muchas de las mismas funcionalidades y metodos. Ejemplo
+
+function Gato(nombre){
+	this.nombre= nombre;
+	this.maullar= function(){
+		console.log('Mi nombre es '+this.nombre);
+	}
+} 
+
+	Para instanciar vamos a usar la palabra 'new' seguida del nombre de la clase
+
+	const raul= new Gato('Raul');
+
+	console.log(raul.maullar());
