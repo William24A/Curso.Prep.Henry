@@ -1,0 +1,11 @@
+Funciones Callback: el concepto de pasar una funcion como argumento de otra se conoce como callback y en ella por convencion se llama a la funcion cb. Ejemplo
+
+function holaUsuario(usuario){
+	console.log('Hola '+ usuario);
+}
+
+function saludar(usuario, cb){
+	return cb(usuario);
+}
+
+saludar('Dan', holaUsuario); // Hola Dan
